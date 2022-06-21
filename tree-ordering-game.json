@@ -1,0 +1,1093 @@
+{
+    "title": "Tree Ordering Game",
+    "anchorID": "first_app",
+    "points": 250,
+    "questions": [
+        {
+            "id": 1,
+            "title": "Question 1",
+            "instructions": "You are tasked with organizing the lineup of four motivational speakers for an event. No two speakers can speak at the same time and you must adhere to the following rule(s):",
+            "subInstructions": "\n Please select and then fill out the diagram below in order to represent Rule #1. For the incorrect diagram, leave it blank.",
+            "rules": [
+                "Rule #1:  Adam (A) must speak before Charlie (C)"
+            ],
+            "explanation": "Since Rule #1 describes a conditional relationship, you want to make sure to note is as such! Be careful to not confuse conditional and fixed relationships.",
+            "time": 0,
+            "lives": 3,
+            "manipulatives": [
+                {
+                    "text": "A",
+                    "x": 6,
+                    "y": 280
+                },
+                {
+                    "text": "B",
+                    "x": 235.3,
+                    "y": 280
+                },
+                {
+                    "text": "C",
+                    "x": 464.6,
+                    "y": 280
+                },
+                {
+                    "text": "D",
+                    "x": 694,
+                    "y": 280
+                }
+            ],
+            "dropZones": [
+                {
+                    "text": "A",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "If this is the correct diagram, please drag and drop the correct name into this spot.",
+                    "hint": "Make sure the variables are in the correct order from Rule #1.",
+                    "explanation": "Correct! A must go into this spot!",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 95,
+                    "y": 512
+                },
+                {
+                    "text": "C",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "If this is the correct diagram, please drag and drop the correct name into this spot.",
+                    "hint": "Make sure the variables are in the correct order from Rule #1.",
+                    "explanation": "Correct! C must go into this spot!",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 605,
+                    "y": 512
+                },
+                {
+                    "text": "",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "If this is the correct diagram, please drag and drop the correct name into this spot.",
+                    "hint": "",
+                    "explanation": "This is the incorrect diagram so it should be left blank! This diagram is for a fixed relationship.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 235.3,
+                    "y": 895
+                },
+                {
+                    "text": "",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "If this is the correct diagram, please drag and drop the correct name into this spot.",
+                    "hint": "",
+                    "explanation": "This is the incorrect diagram so it should be left blank! This diagram is for a fixed relationship.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 464.6,
+                    "y": 895
+                }
+            ],
+            "diagrams": [
+                {
+                    "id": "TreeOrdering1",
+                    "x": 95,
+                    "y": 545
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Question 2",
+            "instructions": "You are tasked with organizing the lineup of four motivational speakers for an event. No two speakers can speak at the same time and you must adhere to the following rule(s):",
+            "subInstructions": "\nUse Rule #1 to fill out the Game Board according to where Adam and Charlie CANNOT go.",
+            "rules": [
+                "Rule #1: Adam (A) must speak before Charlie (C)."
+            ],
+            "explanation": "Congratulations on filling out some of the Game Board! Whenever you need to mark where a variable CANNOT go, be sure to signify that below the particular spot.",
+            "time": 90,
+            "lives": 3,
+            "manipulatives": [
+                {
+                    "text": "A",
+                    "x": 6,
+                    "y": 300
+                },
+                {
+                    "text": "B",
+                    "x": 235.3,
+                    "y": 300
+                },
+                {
+                    "text": "C",
+                    "x": 464.6,
+                    "y": 300
+                },
+                {
+                    "text": "D",
+                    "x": 694,
+                    "y": 300
+                }
+            ],
+            "dropZones": [
+                {
+                    "text": "",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "These spots are for where people CAN be placed.",
+                    "hint": "",
+                    "explanation": "These spots are for where people CAN be placed. However, the question is asking where people CANNOT go.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 6,
+                    "y": 574
+                },
+                {
+                    "text": "",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "These spots are for where people CAN be placed.",
+                    "hint": "",
+                    "explanation": "These spots are for where people CAN be placed. However, the question is asking where people CANNOT go.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 235.3,
+                    "y": 574
+                },
+                {
+                    "text": "",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "These spots are for where people CAN be placed.",
+                    "hint": "",
+                    "explanation": "These spots are for where people CAN be placed. However, the question is asking where people CANNOT go.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 464.6,
+                    "y": 574
+                },
+                {
+                    "text": "",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "These spots are for where people CAN be placed.",
+                    "hint": "",
+                    "explanation": "These spots are for where people CAN be placed. However, the question is asking where people CANNOT go.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 694,
+                    "y": 574
+                },
+                {
+                    "text": "C",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "Please drag and drop into this slot the first letter of the name that CANNOT go here.",
+                    "hint": "Does Rule #1 mandate that Adam have speakers go after him? What about Charlie?",
+                    "explanation": "Correct! Charlie cannot go first since Rule #1 says that Adam is before Charlie.",
+                    "strikethrough": true,
+                    "prefilled": false,
+                    "x": 6,
+                    "y": 817
+                },
+                {
+                    "text": "",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "Please drag and drop into this slot the first letter of the name that CANNOT go here.",
+                    "hint": "",
+                    "explanation": "The question prompt says to only diagram where Adam and Charlie CANNOT go.",
+                    "strikethrough": true,
+                    "prefilled": false,
+                    "x": 235.3,
+                    "y": 817
+                },
+                {
+                    "text": "",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "Please drag and drop into this slot the first letter of the name that CANNOT go here.",
+                    "hint": "",
+                    "explanation": "The question prompt says to only diagram where Adam and Charlie CANNOT go.",
+                    "strikethrough": true,
+                    "prefilled": false,
+                    "x": 464.6,
+                    "y": 817
+                },
+                {
+                    "text": "A",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "Please drag and drop into this slot the first letter of the name that CANNOT go here.",
+                    "hint": "Does Rule #1 mandate that Adam have speakers go after him? What about Charlie?",
+                    "explanation": "Correct! Adam cannot go last since Rule #1 says that Adam is before Charlie.",
+                    "strikethrough": true,
+                    "prefilled": false,
+                    "x": 694,
+                    "y": 817
+                }
+            ],
+            "diagrams": [
+                {
+                    "id": "TreeOrdering2",
+                    "x": 6,
+                    "y": 672
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Question 3",
+            "instructions": "You are tasked with organizing the lineup of four motivational speakers for an event. No two speakers can speak at the same time and you must adhere to the following rule(s):",
+            "subInstructions": "\n Please select and then fill out the diagram below in order to represent Rule #2. For the incorrect diagram, leave it blank.",
+            "rules": [
+                "Rule #1: Adam (A) must speak before Charlie (C)",
+                "Rule #2: Doug (D) speaks before both Bob (B) and Charlie (C)"
+            ],
+            "explanation": "Congratulations on diagramming the new rule! Be sure to never use arrows in your diagrams unless there is an IF, THEN statement.",
+            "time": 90,
+            "lives": 3,
+            "manipulatives": [
+                {
+                    "text": "A",
+                    "x": 6,
+                    "y": 280
+                },
+                {
+                    "text": "B",
+                    "x": 235.3,
+                    "y": 280
+                },
+                {
+                    "text": "C",
+                    "x": 464.6,
+                    "y": 280
+                },
+                {
+                    "text": "D",
+                    "x": 694,
+                    "y": 280
+                }
+            ],
+            "dropZones": [
+                {
+                    "text": "",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "If this is the correct diagram, please drag and drop the correct name into this spot.",
+                    "hint": "",
+                    "explanation": "This is the incorrect diagram so it should be left blank! This diagram is for an IF, THEN relationship.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 6,
+                    "y": 470
+                },
+                {
+                    "text": "",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "If this is the correct diagram, please drag and drop the correct name into this spot.",
+                    "hint": "",
+                    "explanation": "This is the incorrect diagram so it should be left blank! This diagram is for an IF, THEN relationship.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 437,
+                    "y": 470
+                },
+                {
+                    "text": "",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "If this is the correct diagram, please drag and drop the correct name into this spot.",
+                    "hint": "",
+                    "explanation": "This is the incorrect diagram so it should be left blank! This diagram is for an IF, THEN relationship.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 694,
+                    "y": 470
+                },
+                {
+                    "text": "D",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "If this is the correct diagram, please drag and drop the correct name into this spot.",
+                    "hint": "Rule #2 says that Doug comes BEFORE Bob and Charlie.",
+                    "explanation": "Correct! Doug must go in this spot since Rule #2 says that he comes before both Bob and Charlie.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 68,
+                    "y": 815
+                },
+                {
+                    "text": null,
+                    "texts": [
+                        "B",
+                        "C"
+                    ],
+                    "subtext": null,
+                    "description": "If this is the correct diagram, please drag and drop the correct name into this spot.",
+                    "hint": "Rule #2 says that Bob and Charlie come after Doug.",
+                    "explanation": "Correct! Either Bob or Charlie goes in this spot since Rule #2 says that they both go after Doug.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 632,
+                    "y": 703
+                },
+                {
+                    "text": null,
+                    "texts": [
+                        "C",
+                        "B"
+                    ],
+                    "subtext": null,
+                    "description": "If this is the correct diagram, please drag and drop the correct name into this spot.",
+                    "hint": "Rule #2 says that Bob and Charlie come after Doug.",
+                    "explanation": "Correct! Either Bob or Charlie goes in this spot since Rule #2 says that they both go after Doug.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 632,
+                    "y": 923
+                }
+            ],
+            "diagrams": [
+                {
+                    "id": "TreeOrdering3",
+                    "x": 6,
+                    "y": 488
+                }
+            ]
+        },
+		{
+            "id": 2,
+            "title": "Question 2",
+            "instructions": "You are tasked with organizing the lineup of four motivational speakers for an event. No two speakers can speak at the same time and you must adhere to the following rule(s):",
+            "subInstructions": "\nUse Rule #1 to fill out the Game Board according to where Adam and Charlie CANNOT go.",
+            "rules": [
+                "Rule #1: Adam (A) must speak before Charlie (C)."
+            ],
+            "explanation": "Congratulations on filling out some of the Game Board! Whenever you need to mark where a variable CANNOT go, be sure to signify that below the particular spot.",
+            "time": 90,
+            "lives": 3,
+            "manipulatives": [
+                {
+                    "text": "A",
+                    "x": 6,
+                    "y": 300
+                },
+                {
+                    "text": "B",
+                    "x": 235.3,
+                    "y": 300
+                },
+                {
+                    "text": "C",
+                    "x": 464.6,
+                    "y": 300
+                },
+                {
+                    "text": "D",
+                    "x": 694,
+                    "y": 300
+                }
+            ],
+            "dropZones": [
+                {
+                    "text": "",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "These spots are for where people CAN be placed.",
+                    "hint": "",
+                    "explanation": "These spots are for where people CAN be placed. However, the question is asking where people CANNOT go.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 6,
+                    "y": 574
+                },
+                {
+                    "text": "",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "These spots are for where people CAN be placed.",
+                    "hint": "",
+                    "explanation": "These spots are for where people CAN be placed. However, the question is asking where people CANNOT go.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 235.3,
+                    "y": 574
+                },
+                {
+                    "text": "",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "These spots are for where people CAN be placed.",
+                    "hint": "",
+                    "explanation": "These spots are for where people CAN be placed. However, the question is asking where people CANNOT go.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 464.6,
+                    "y": 574
+                },
+                {
+                    "text": "",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "These spots are for where people CAN be placed.",
+                    "hint": "",
+                    "explanation": "These spots are for where people CAN be placed. However, the question is asking where people CANNOT go.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 694,
+                    "y": 574
+                },
+                {
+                    "text": "C",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "Please drag and drop into this slot the first letter of the name that CANNOT go here.",
+                    "hint": "Does Rule #1 mandate that Adam have speakers go after him? What about Charlie?",
+                    "explanation": "Correct! Charlie cannot go first since Rule #1 says that Adam is before Charlie.",
+                    "strikethrough": true,
+                    "prefilled": false,
+                    "x": 6,
+                    "y": 817
+                },
+                {
+                    "text": "",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "Please drag and drop into this slot the first letter of the name that CANNOT go here.",
+                    "hint": "",
+                    "explanation": "The question prompt says to only diagram where Adam and Charlie CANNOT go.",
+                    "strikethrough": true,
+                    "prefilled": false,
+                    "x": 235.3,
+                    "y": 817
+                },
+                {
+                    "text": "",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "Please drag and drop into this slot the first letter of the name that CANNOT go here.",
+                    "hint": "",
+                    "explanation": "The question prompt says to only diagram where Adam and Charlie CANNOT go.",
+                    "strikethrough": true,
+                    "prefilled": false,
+                    "x": 464.6,
+                    "y": 817
+                },
+                {
+                    "text": "A",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "Please drag and drop into this slot the first letter of the name that CANNOT go here.",
+                    "hint": "Does Rule #1 mandate that Adam have speakers go after him? What about Charlie?",
+                    "explanation": "Correct! Adam cannot go last since Rule #1 says that Adam is before Charlie.",
+                    "strikethrough": true,
+                    "prefilled": false,
+                    "x": 694,
+                    "y": 817
+                }
+            ],
+            "diagrams": [
+                {
+                    "id": "TreeOrdering2",
+                    "x": 6,
+                    "y": 672
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Question 4",
+            "instructions": "You are tasked with organizing the lineup of four motivational speakers for an event. No two speakers can speak at the same time and you must adhere to the following rule(s):",
+            "subInstructions": "\nPlease combine Rule #1 and Rule #2 in a single diagram below.",
+            "rules": [
+                "Rule #1: Adam (A) must speak before Charlie (C)",
+                "Rule #2: Doug (D) speaks before both Bob (B) and Charlie (C)"
+            ],
+            "explanation": "Congratulations on completing this diagram! With Tree Games, whenever you have multiple rules that deal with the same variables, attempt to combine them into one diagram as so.",
+            "time": 90,
+            "lives": 3,
+            "manipulatives": [
+                {
+                    "text": "A",
+                    "x": 6,
+                    "y": 250
+                },
+                {
+                    "text": "B",
+                    "x": 235.3,
+                    "y": 250
+                },
+                {
+                    "text": "C",
+                    "x": 464.6,
+                    "y": 250
+                },
+                {
+                    "text": "D",
+                    "x": 694,
+                    "y": 250
+                }
+            ],
+            "dropZones": [
+                {
+                    "text": "A",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "",
+                    "hint": "So far, who only has to come before one person?",
+                    "explanation": "Correct! Adam must go in this spot since the rules only specify his placement ahead of one person.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 68,
+                    "y": 450
+                },
+                {
+                    "text": "D",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "",
+                    "hint": "So far, who has to come before at least two people?",
+                    "explanation": "Correct! Doug must go in this spot since the rules state that he must be placed before at least two people.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 68,
+                    "y": 703.3
+                },
+                {
+                    "text": "C",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "",
+                    "hint": "So far, who has to come after two people?",
+                    "explanation": "Correct! Charlie must go in this spot since it can be deduced from the rules that he is placed after at least two people.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 632,
+                    "y": 576.65
+                },
+                {
+                    "text": "B",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "",
+                    "hint": "So far, who has to come after possibly only one person?",
+                    "explanation": "Correct! Bob must go in this spot since the rules state that he may possibly only be placed after one person.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 632,
+                    "y": 830
+                }
+            ],
+            "diagrams": [
+                {
+                    "id": "TreeOrdering4",
+                    "x": 68,
+                    "y": 512.1
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Question 5",
+            "instructions": "You are tasked with organizing the lineup of four motivational speakers for an event. No two speakers can speak at the same time and you must adhere to the following rule(s):",
+            "subInstructions": "\nUse Rule #2 to fill out the Game Board according to where Doug, Bob, and Charlie CANNOT go. Some answer may be used more than once.",
+            "rules": [
+                "Rule #1: Adam (A) must speak before Charlie (C)",
+                "Rule #2: Doug (D) speaks before both Bob (B) and Charlie (C)"
+            ],
+            "explanation": "Congratulations on filling out some of the Game Board! Whenever you need to mark where a variable CANNOT go, be sure to signify that below the particular spot.",
+            "time": 90,
+            "lives": 3,
+            "manipulatives": [
+                {
+                    "text": "A",
+                    "x": 6,
+                    "y": 270
+                },
+                {
+                    "text": "B",
+                    "x": 235.3,
+                    "y": 270
+                },
+                {
+                    "text": "C",
+                    "x": 464.6,
+                    "y": 270
+                },
+                {
+                    "text": "D",
+                    "x": 694,
+                    "y": 270
+                },
+                {
+                    "text": "D",
+                    "x": 694,
+                    "y": 270
+                }
+            ],
+            "dropZones": [
+                {
+                    "text": "",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "These spots are for where people‘s names CAN be placed.",
+                    "hint": "",
+                    "explanation": "These spots are for where people CAN be placed. However, the question is asking where people CANNOT go.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 6,
+                    "y": 392
+                },
+                {
+                    "text": "",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "These spots are for where people‘s names CAN be placed.",
+                    "hint": "",
+                    "explanation": "These spots are for where people CAN be placed. However, the question is asking where people CANNOT go.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 235.3,
+                    "y": 392
+                },
+                {
+                    "text": "",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "These spots are for where people‘s names CAN be placed.",
+                    "hint": "",
+                    "explanation": "These spots are for where people CAN be placed. However, the question is asking where people CANNOT go.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 464.6,
+                    "y": 392
+                },
+                {
+                    "text": "",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "These spots are for where people‘s names CAN be placed.",
+                    "hint": "",
+                    "explanation": "These spots are for where people CAN be placed. However, the question is asking where people CANNOT go.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 694,
+                    "y": 392
+                },
+                {
+                    "divider": "//////////////////////////////////////////////////////////",
+                    "text": "C",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "",
+                    "hint": "",
+                    "explanation": "",
+                    "strikethrough": true,
+                    "prefilled": true,
+                    "x": 6,
+                    "y": 612
+                },
+                {
+                    "text": "A",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "",
+                    "hint": "",
+                    "explanation": "",
+                    "strikethrough": true,
+                    "prefilled": true,
+                    "x": 694,
+                    "y": 612
+                },
+                {
+                    "divider": "//////////////////////////////////////////////////////////",
+                    "text": "B",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "Please drag and drop into this slot the first letter of the name that CANNOT go here.",
+                    "hint": "So far, who has to come after possibly only one person?",
+                    "explanation": "Correct! Bob must go in this spot since the rules state that he may possibly only be placed after one person.",
+                    "strikethrough": true,
+                    "prefilled": false,
+                    "x": 6,
+                    "y": 732
+                },
+                {
+                    "text": "C",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "Please drag and drop into this slot the first letter of the name that CANNOT go here.",
+                    "hint": "So far, who must come after at least two people?",
+                    "explanation": "Correct! Charlie must go in this spot since it can be deduced from the rules that he is placed after at least two people.",
+                    "strikethrough": true,
+                    "prefilled": false,
+                    "x": 235.3,
+                    "y": 732
+                },
+                {
+                    "text": "D",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "Please drag and drop into this slot the first letter of the name that CANNOT go here.",
+                    "hint": "So far, who has to come before at least two people?",
+                    "explanation": "Correct! Doug must go in this spot since the rules state that he must be placed before at least two people.",
+                    "strikethrough": true,
+                    "prefilled": false,
+                    "x": 464.6,
+                    "y": 732
+                },
+                {
+                    "text": "D",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "Please drag and drop into this slot the first letter of the name that CANNOT go here.",
+                    "hint": "So far, who has to come before at least two people?",
+                    "explanation": "Correct! Doug must go in this spot since the rules state that he must be placed before at least two people.",
+                    "strikethrough": true,
+                    "prefilled": false,
+                    "x": 694,
+                    "y": 732
+                }
+            ],
+            "diagrams": [
+                {
+                    "id": "TreeOrdering5",
+                    "x": 6,
+                    "y": 470
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Question 6",
+            "instructions": "You are tasked with organizing the lineup of four motivational speakers for an event. No two speakers can speak at the same time and you must adhere to the following rule(s):",
+            "subInstructions": "\nPlease fill out the diagram below in order to represent Rule #3 and also mark where Adam and Bob cannot go on the Game Board.",
+            "rules": [
+                "Rule #1: Adam (A) must speak before Charlie (C)",
+                "Rule #2: Doug (D) speaks before both Bob (B) and Charlie (C)",
+                "Rule #3: Adam (A) must speak immediately after Bob (B)"
+            ],
+            "explanation": "Congratulations on filling out the correct diagram! Remember to always use brackets/a box when diagramming a fixed relationship.",
+            "time": 90,
+            "lives": 3,
+            "manipulatives": [
+                {
+                    "text": "A",
+                    "x": 6,
+                    "y": 300
+                },
+                {
+                    "text": "A",
+                    "x": 6,
+                    "y": 300
+                },
+                {
+                    "text": "B",
+                    "x": 235.3,
+                    "y": 300
+                },
+                {
+                    "text": "B",
+                    "x": 235.3,
+                    "y": 300
+                },
+                {
+                    "text": "C",
+                    "x": 464.6,
+                    "y": 300
+                },
+                {
+                    "text": "D",
+                    "x": 694,
+                    "y": 300
+                }
+            ],
+            "dropZones": [
+                {
+                    "text": null,
+                    "texts": [
+                        "B",
+                        "A"
+                    ],
+                    "subtext": null,
+                    "description": "If this is the correct diagram, please drag and drop the correct name into this spot.",
+                    "hint": "Who comes before who according to Rule #3? Signify that order here.",
+                    "explanation": "Correct! Bob must go in this spot since Rule #3 states that he is immediately before Adam.",
+                    "strikethrough": true,
+                    "prefilled": false,
+                    "x": 6,
+                    "y": 669
+                },
+                {
+                    "text": null,
+                    "texts": [
+                        "A",
+                        "B"
+                    ],
+                    "subtext": null,
+                    "description": "If this is the correct diagram, please drag and drop the correct name into this spot.",
+                    "hint": "Who comes before who according to Rule #3? Signify that order here.",
+                    "explanation": "Correct! Adam must go in this spot since Rule #3 states that he is immediately after Bob.",
+                    "strikethrough": true,
+                    "prefilled": false,
+                    "x": 694,
+                    "y": 669
+                },
+                {
+                    "text": "B",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "If this is the correct diagram, please drag and drop the correct name into this spot.",
+                    "hint": "Who comes before who according to Rule #3? Signify that order here.",
+                    "explanation": "Correct! Bob must go in this spot since Rule #3 states that he is immediately before Adam.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 235.3,
+                    "y": 889
+                },
+                {
+                    "text": "A",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "If this is the correct diagram, please drag and drop the correct name into this spot.",
+                    "hint": "Who comes before who according to Rule #3? Signify that order here.",
+                    "explanation": "Correct! Adam must go in this spot since Rule #3 states that he is immediately after Bob.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 464.6,
+                    "y": 889
+                }
+            ],
+            "diagrams": [
+                {
+                    "id": "TreeOrdering6",
+                    "x": 6,
+                    "y": 524
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "title": "Question 7",
+            "instructions": "You are tasked with organizing the lineup of four motivational speakers for an event. No two speakers can speak at the same time and you must adhere to the following rule(s):",
+            "subInstructions": "\nUse Rule #3 to fill out the Game Board according to where Adam and Bob CANNOT go.",
+            "rules": [
+                "Rule #1: Adam (A) must speak before Charlie (C)",
+                "Rule #2: Doug (D) speaks before both Bob (B) and Charlie (C)",
+                "Rule #3: Adam (A) must speak immediately after Bob (B)"
+            ],
+            "explanation": "Congratulations on filling out some of the Game Board! Whenever you need to mark where a variable CANNOT go, be sure to signify that below the particular spot.",
+            "time": 120,
+            "lives": 5,
+            "manipulatives": [
+                {
+                    "text": "A",
+                    "x": 6,
+                    "y": 270
+                },
+                {
+                    "text": "A",
+                    "x": 6,
+                    "y": 270
+                },
+                {
+                    "text": "B",
+                    "x": 235.3,
+                    "y": 270
+                },
+                {
+                    "text": "B",
+                    "x": 235.3,
+                    "y": 270
+                },
+                {
+                    "text": "C",
+                    "x": 464.6,
+                    "y": 270
+                },
+                {
+                    "text": "D",
+                    "x": 694,
+                    "y": 270
+                }
+            ],
+            "dropZones": [
+                {
+                    "text": "D",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "Please drag and drop into this slot the first letter of the name that CAN go here.",
+                    "hint": "Combine all rules. Only one speaker can be placed before everyone else.",
+                    "explanation": "Correct! Doug must go in this spot. Rule #2 says he is before Bob and Charlie, and since Adam is after Bob per Rule #3, Doug is in front of him as well.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 6,
+                    "y": 375
+                },
+                {
+                    "text": "B",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "Please drag and drop into this slot the first letter of the name that CAN go here.",
+                    "hint": "Can Adam come before two speakers? What about Charlie?",
+                    "explanation": "Correct! Bob must go in this spot. Rule #3 says that he must come immediately before Adam.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 235.3,
+                    "y": 375
+                },
+                {
+                    "text": "A",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "Please drag and drop into this slot the first letter of the name that CAN go here.",
+                    "hint": "Look at the people you have already marked off beneath the board and see if the remaining speakers can go here.",
+                    "explanation": "Correct! Adam must go in this spot. This is the only position that allows for him to be after Bob and before Charlie.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 464.6,
+                    "y": 375
+                },
+                {
+                    "text": "C",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "Please drag and drop into this slot the first letter of the name that CAN go here.",
+                    "hint": "Look at the people you have already marked off beneath the board and see if the remaining speakers can go here.",
+                    "explanation": "Correct! Charlie must go in this spot. Charlie has to come after Adam and Doug due to Rules #1 & #2, then Rule #3 forces him after Bob as well.",
+                    "strikethrough": false,
+                    "prefilled": false,
+                    "x": 694,
+                    "y": 375
+                },
+                {
+                    "text": "C",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "",
+                    "hint": "",
+                    "explanation": "",
+                    "strikethrough": true,
+                    "prefilled": true,
+                    "x": 6,
+                    "y": 585
+                },
+                {
+                    "text": "C",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "",
+                    "hint": "",
+                    "explanation": "",
+                    "strikethrough": true,
+                    "prefilled": true,
+                    "x": 235.3,
+                    "y": 585
+                },
+                {
+                    "text": "D",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "",
+                    "hint": "",
+                    "explanation": "",
+                    "strikethrough": true,
+                    "prefilled": true,
+                    "x": 464.6,
+                    "y": 585
+                },
+                {
+                    "text": "A",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "",
+                    "hint": "",
+                    "explanation": "",
+                    "strikethrough": true,
+                    "prefilled": true,
+                    "x": 694,
+                    "y": 585
+                },
+                {
+                    "text": "B",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "",
+                    "hint": "",
+                    "explanation": "",
+                    "strikethrough": true,
+                    "prefilled": true,
+                    "x": 6,
+                    "y": 695
+                },
+                {
+                    "text": "A",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "Please drag and drop into this slot the first letter of the name that CANNOT go here.",
+                    "hint": "Combine all three rules, can Adam speak before Both Bob and Charlie?",
+                    "explanation": "Correct! Adam must go in this spot. It can be deducted by combining all three rules that Adam cannot be placed before two people.",
+                    "strikethrough": true,
+                    "prefilled": false,
+                    "x": 235.3,
+                    "y": 695
+                },
+                {
+                    "text": "B",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "Please drag and drop into this slot the first letter of the name that CANNOT go here.",
+                    "hint": "Combine all three rules, can Bob speak after Adam and another speaker?",
+                    "explanation": "Correct! Bob must go in this spot. It can be deducted by combining all three rules that Bob must speak before two people.",
+                    "strikethrough": true,
+                    "prefilled": false,
+                    "x": 464.6,
+                    "y": 695
+                },
+                {
+                    "text": "D",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "",
+                    "hint": "",
+                    "explanation": "",
+                    "strikethrough": true,
+                    "prefilled": true,
+                    "x": 694,
+                    "y": 695
+                },
+                {
+                    "text": "A",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "",
+                    "hint": "",
+                    "explanation": "",
+                    "strikethrough": true,
+                    "prefilled": true,
+                    "x": 6,
+                    "y": 807
+                },
+                {
+                    "text": "B",
+                    "texts": null,
+                    "subtext": null,
+                    "description": "",
+                    "hint": "",
+                    "explanation": "",
+                    "strikethrough": true,
+                    "prefilled": true,
+                    "x": 694,
+                    "y": 807
+                }
+            ],
+            "diagrams": [
+                {
+                    "id": "TreeOrdering7",
+                    "x": 6,
+                    "y": 473
+                }
+            ]
+        }
+    ]
+}

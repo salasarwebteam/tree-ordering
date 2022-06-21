@@ -1,0 +1,4 @@
+module.exports = {
+    ANIMATION_IN_DURATION: 200,
+    ANIMATION_OUT_DURATION: 200
+};

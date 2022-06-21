@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LSAT Game</title>
+    <style>
+        body {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        #animation_container {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+			
+        }
+
+        /* Keep it off stage */
+        #dom-element-container {
+            position: absolute;
+            top: -5000px;
+            left: -5000px;
+        }
+
+        #preloader-div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            color: #676767;
+            font-family: "Lato";
+            font-weight: 400;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        /* Game title */
+        #preloader-div #title {
+            color: #444444;
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 0.2em;
+        }
+
+        /* Lesson title */
+        #preloader-div #title-lesson {
+            color: #444444;
+            font-size: 1.25em;
+            font-weight: 700;
+            margin-bottom: 0.4em;
+        }
+
+        #preloader-div p {
+            margin: 0.25em 0;
+        }
+
+        #loading-text {
+            font-size: 1.1em;
+            margin: 0.57em 0;
+            padding: 0.5em 0.875em;
+            padding-bottom: 0.4em;
+        }
+
+        /* START button */
+        #preloader-div button {
+            color: #369ca8;
+            font-family: "Lato";
+            font-size: 1.1em;
+            font-weight: 400;
+            background-color: transparent;
+            border-radius: 0.3125em;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid #369ca8 !important;
+            text-transform: uppercase;
+            margin: 0.57em 0;
+            padding: 0.5em 0.875em;
+            padding-bottom: 0.4em;
+            outline: none;
+            display: none;
+        }
+
+        /* START button hover */
+        #preloader-div button:hover {
+            background-color: #369ca8;
+            color: #ffffff;
+        }
+
+        /* portrait mode image */
+        #preloader-div img {
+            margin-left: 0.3em;
+            width: 1.6em;
+            height: 1.66em;
+        }
+
+        #preloader-div #portrait-mode {
+            display: none;
+        }
+
+        #preloader-div #portrait-mode p {
+            display: inline-block;
+        }
+
+		
+        #canvas{
+            margin:2.5% 1% !important;
+            width:98% !important;
+            height:95% !important;
+        }
+
+        @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation : portrait) { 
+            #canvas{
+                margin:1% !important;
+                width:98% !important;
+                height:98% !important;
+            }  
+
+            #animation_container{
+                margin:0 auto !important;
+            }
+        }
+
+
+
+    </style>
+    <script src="createjs.min.js"></script>
+    <script>
+        function LoadGFonts(families, comp) {
+            var lib = comp.getLibrary();
+            var googleObject = { type: "Google", loadedFonts: 0, totalFonts: families.length, callOnLoad: lib.gfontAvailable };
+            for (var i = 0; i < families.length; i++)
+                isFontAvailable(gFontsFamilies[i], googleObject);
+        }
+        function isFontAvailable(font, obj) {
+            var timeOut = 5000;
+            var delay = 200;
+            var interval = 0;
+            var timeElapsed = 0;
+            function checkFont() {
+                var node = document.createElement("span");
+                node.innerHTML = "giItT1WQy@!-/#";
+                node.style.position = "absolute";
+                node.style.left = "-1000px";
+                node.style.top = "-1000px";
+                node.style.fontSize = "300px";
+                node.style.fontFamily = "sans-serif";
+                node.style.fontVariant = "normal";
+                node.style.fontStyle = "normal";
+                node.style.fontWeight = "normal";
+                node.style.letterSpacing = "0";
+                document.body.appendChild(node);
+                var width = node.offsetWidth;
+                node.style.fontFamily = font + "," + node.style.fontFamily;
+                var returnVal = false;
+                if ((node && node.offsetWidth != width) || timeElapsed >= timeOut) {
+                    obj.loadedFonts++;
+                    if (interval)
+                        clearInterval(interval);
+                    obj.callOnLoad(font, obj.totalFonts);
+                    returnVal = true;
+                }
+                if (node) {
+                    node.parentNode.removeChild(node);
+                    node = null;
+                }
+                timeElapsed += delay;
+                return returnVal;
+            }
+            if (!checkFont()) {
+                interval = setInterval(checkFont, delay);
+            }
+        }
+    </script>
+    <script>
+        var gFontsFamilies = ["Lato"];
+    </script>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400&subset=latin">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:700&subset=latin">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:900&subset=latin">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:regular&subset=latin">
+    <script src="index.js"></script>
+    <script src="bundle.js"></script>
+    <script>
+    </script>
+    <script>
+        var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+        var app = window.app;
+
+        function init() {
+            app.init();
+
+            canvas = document.getElementById("canvas");
+            anim_container = document.getElementById("animation_container");
+            dom_overlay_container = document.getElementById("dom_overlay_container");
+            var comp = AdobeAn.getComposition("42CBA5CD4DE0D34D9B47F97B8C4EC81A");
+            var lib = comp.getLibrary();
+            try {
+                if (!(typeof gFontsFamilies === 'undefined' || gFontsFamilies === null))
+                    LoadGFonts(gFontsFamilies, comp);
+                if (!(typeof totalTypekitFonts === 'undefined' || totalTypekitFonts === null)) {
+                    var typekitObject = { type: 'Typekit', loadedFonts: 0, totalFonts: totalTypekitFonts, callOnLoad: lib.tfontAvailable };
+                    Typekit.load({
+                        async: true,
+                        'fontactive': function (family) {
+                            isFontAvailable(family, typekitObject);
+                        }
+                    });
+                }
+            } catch (e) { };
+            var loader = new createjs.LoadQueue(false);
+            loader.installPlugin(createjs.Sound);
+            loader.addEventListener("complete", function (evt) { handleComplete(evt, comp) });
+            var lib = comp.getLibrary();
+            loader.loadManifest(lib.properties.manifest);
+        }
+
+        function handleComplete(evt, comp) {
+            //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+            var lib = comp.getLibrary();
+            var ss = comp.getSpriteSheet();
+            var queue = evt.target;
+            var ssMetadata = lib.ssMetadata;
+
+            for (i = 0; i < ssMetadata.length; i++) {
+                ss[ssMetadata[i].name] = new createjs.SpriteSheet({ "images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames })
+            }
+
+            canvas.style.display = 'block';
+            exportRoot = new lib.lsatgame();
+            stage = new lib.Stage(canvas);
+            //Registers the "tick" event listener.
+            fnStartAnimation = function () {
+                stage.addChild(exportRoot);
+                createjs.Ticker.framerate = lib.properties.fps;
+                createjs.Ticker.addEventListener("tick", stage);
+            }
+            //Code to support hidpi screens and responsive scaling.
+            AdobeAn.makeResponsive(true, 'both', true, 1, [canvas, anim_container, dom_overlay_container]);
+            AdobeAn.compositionLoaded(lib.properties.id);
+            fnStartAnimation();
+        }
+
+        function playSound(id, loop) {
+            return createjs.Sound.play(id, { 'interrupt': createjs.Sound.INTERRUPT_EARLY, 'loop': loop });
+        }
+	
+    </script>
+</head>
+
+<body onload="init();" style="margin:0px;">
+    <div id="animation_container" style="background-color:rgba(255, 255, 255, 1); width:900px; height:1350px">
+        <canvas id="canvas" width="900" height="1350"
+            style="position: absolute; display: none; background-color:rgba(255, 255, 255, 1);"></canvas>
+        <div id="dom_overlay_container"
+            style="pointer-events:none; overflow:hidden; width:900px; height:1350px; position: absolute; left: 0px; top: 0px; display: none;">
+        </div>
+    </div>
+
+    <div id="dom-element-container"></div>
+
+    <div id="preloader-div">
+        <div id="title">Learning Game</div>
+        <div id="title-lesson">---</div>
+        <div id="loading-text">Loading...</div>
+        <button>start</button>
+
+        <div id="portrait-mode">
+            <p>Best viewed in portrait mode.</p>
+            <img src="./images/portrait.jpeg" alt="portrait mode">
+        </div>
+
+        <p id="total-questions">Total Questions: 0</p>
+        <p>Drag-and-drop into slots.</p>
+</body>
+
+</html>
